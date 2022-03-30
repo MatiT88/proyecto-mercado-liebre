@@ -37,6 +37,10 @@ header button.barsMenu{
     font-size: 20px;
 }
 
+.imagen-y-descripcion-producto{
+    padding: 0px 8px;
+}
+
 
 footer div.iconos-footer{
     text-align: center;
