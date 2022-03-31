@@ -10,6 +10,10 @@ header{
     display: flex;
 }
 
+.banner-del-header img{
+    width: 100%;
+}
+
 main{
     margin-right:auto ;
     margin-left: auto;
@@ -52,6 +56,10 @@ main section h3{
     font-size: 24px;
 }
 
+.contenedor-seccion-ofertas{
+    background-color: gray;
+}
+
 .precios{
     font-size: 18px;
     margin-top: 0px;
@@ -72,7 +80,7 @@ main section h3{
     color: #39b54a;
 }
 
-.contenedor-de-imagen-y-descripcion-producto{
+main section .contenedor-de-imagen-y-descripcion-producto{
     padding: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
