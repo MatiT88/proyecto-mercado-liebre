@@ -5,6 +5,13 @@ body{
 header{
     background-color: #eac926;
 }
+
+main{
+    margin-right:auto ;
+    margin-left: auto;
+    width: 90%;
+}
+
 header nav ul{
     padding: 10px 0;
 }
@@ -37,10 +44,26 @@ header button.barsMenu{
     font-size: 20px;
 }
 
-.imagen-y-descripcion-producto{
-    padding: 0px 8px;
+main section h3{
+    font-size: 24px;
 }
 
+.precios{
+    font-size: 18px;
+}
+
+.imagen-y-descripcion-producto i{
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    padding: 5px;
+    color: #39b54a;
+}
+
+.imagen-y-descripcion-producto{
+    padding: 0px 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 footer div.iconos-footer{
     text-align: center;
