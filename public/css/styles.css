@@ -6,6 +6,10 @@ header{
     background-color: #eac926;
 }
 
+.campo-busqueda-y-boton-busqueda{
+    display: flex;
+}
+
 main{
     margin-right:auto ;
     margin-left: auto;
@@ -50,19 +54,29 @@ main section h3{
 
 .precios{
     font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-.imagen-y-descripcion-producto i{
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    margin-top: 0px;
+
+}
+
+.contenedor-de-imagen-y-descripcion-producto i{
     border: 1px solid #39b54a;
     border-radius: 50%;
     padding: 5px;
     color: #39b54a;
 }
 
-.imagen-y-descripcion-producto{
-    padding: 0px 8px;
+.contenedor-de-imagen-y-descripcion-producto{
+    padding: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
+    border: 1px solid #ebebeb;
 }
 
 footer div.iconos-footer{
