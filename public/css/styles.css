@@ -1,179 +1,203 @@
-*{
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto';
-    font-size: 12px;
+body {
+  font-family: "Roboto";
+  font-size: 12px;
 }
-header{
-    background-color: #eac926;
-}
-
-.campo-busqueda-y-boton-busqueda{
-    display: flex;
-    margin-left: 10px;
+header {
+  background-color: #eac926;
 }
 
-.logo-mercado-liebre{
-    margin-top: 15px;
-    margin-left: 15px;
-    margin-bottom: 10px;
-    width: 200px;
+.campo-busqueda-y-boton-busqueda {
+  display: flex;
+  margin-left: 10px;
 }
 
-.banner-del-header img{
-    width: 100%;
+.logo-mercado-liebre {
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.banner-del-header img {
+  width: 100%;
 }
 
 /* Este nav tiene que aparecer en version tablet en adelante */
-header nav ul{
-    padding: 10px 0;
-    margin-left: 5px;
-    display:none 
+header nav ul {
+  padding: 10px 0;
+  margin-left: 5px;
+  display: none;
 }
-header nav ul li{
-    list-style-type: none;
+header nav ul li {
+  list-style-type: none;
 }
-header nav ul li a{
-    text-decoration: none;
-    color: black;
-}
-
-.top-header p{
-    text-align: center;
-    border-radius: 8px;
-    background-color: #1259c3;
-    color: white;
-}
-#mano-top-header{
-    text-align: center;
-}
-header .buttonContain{
-    text-align: center;
-    padding-bottom: 10px;
-}
-header button.barsMenu{
-    border-radius: 3px;
-    background-color: #1259c3;
-    color: white;
-    padding: 10px;
-    font-size: 20px;
+header nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 
-header .banner-del-header{
-    width: 100%;
+.top-header p {
+  text-align: center;
+  border-radius: 8px;
+  background-color: #1259c3;
+  color: white;
+}
+#mano-top-header {
+  text-align: center;
+}
+header .buttonContain {
+  text-align: center;
+  padding-bottom: 10px;
+}
+header button.barsMenu {
+  border-radius: 3px;
+  background-color: #1259c3;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
 }
 
-.boton-de-busqueda{
-    margin-left: 5px;
+header .banner-del-header {
+  width: 100%;
 }
 
-main{
-    margin-right:auto ;
-    margin-left: auto;
-    width: 90%;
+main section article i{
+
 }
 
-main section div img{
-    width: 100%;
+
+.boton-de-busqueda {
+  margin-left: 5px;
 }
 
-main section h3{
-    font-size: 24px;
-    color: #666;
-    margin-left: 10px;
-    margin-top: 10px;
+main {
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
 }
 
-.contenedor-de-toda-una-seccion{
-    background-color: #ebebeb;
-    width: 100%;
+main section article img {
+  width: 100%;
 }
 
-.precios{
-    font-size: 18px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+main section h3 {
+  font-size: 24px;
+  color: #666;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
-.descuento{
-    font-size: 16px;
-    color: #39b54a;
-    margin-top: 0px;
+.precio-y-descuento {
+  display: flex;
+}
 
+.contenedor-de-toda-una-seccion {
+  background-color: #ebebeb;
+  width: 100%;
+}
+
+.precios {
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-right: 5px;
+}
+
+.descuento {
+  font-size: 16px;
+  color: #39b54a;
+  margin-top: 0px;
 }
 
 /* Esta descripcion tiene que aparecer en version tablet */
-.descripcion{
-    font-size: 16px;
-    color: #666;
-    display: none;
+.descripcion {
+  font-size: 16px;
+  color: #666;
+  display: none;
 }
 
-main section .contenedor-de-imagen-y-descripcion-producto{
-    padding: 15px;
-    margin: 10px;
-    border: 1px solid #ebebeb;
-    background-color: white;
+main section .contenedor-de-imagen-y-descripcion-producto {
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ebebeb;
+  background-color: white;
 }
 
-.contenedor-de-imagen-y-descripcion-producto i{
-    border: 1px solid #39b54a;
-    border-radius: 50%;
-    padding: 5px;
-    color: #39b54a;
+.contenedor-de-imagen-y-descripcion-producto i {
+  border: 1px solid #39b54a;
+  border-radius: 50%;
+  padding: 5px;
+  color: #39b54a;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  background-color: #FFF;
+
 }
 
-.contendor-informacion-producto-sin-imagen{
-    border-top: 1px solid  #ebebeb;
-    padding-top: 10px
-}
+/* main section article i{
+display: block;
 
 
-footer div.iconos-footer{
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #1259c3;
+
+
+position: absolute;
+right: 20px;
+top: -15px; */
+
+.contendor-informacion-producto-sin-imagen {
+  border-top: 1px solid #ebebeb;
+  padding-top: 10px;
 }
-footer div.titulos-footer{
-    text-align: center;
-    font-size: 14px;
+
+footer div.iconos-footer {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1259c3;
 }
-footer div.descripciones-footer{
-    text-align: center;
-    margin: -15px 0 0 0;
+footer div.titulos-footer {
+  text-align: center;
+  font-size: 14px;
+}
+footer div.descripciones-footer {
+  text-align: center
 }
 
 /* TABLET SCREEN */
-@media screen and (min-width:361px) and (max-width:768px){
-    main section .contenedor-de-imagen-y-descripcion-producto{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    header nav ul{
-        display:inline-block
-    }
-    .descripcion{
-        display: inline-block;
-    }
-    header button.barsMenu{
-        display: none;
-    }
+@media screen and (min-width: 361px) and (max-width: 768px) {
+  main section .contenedor-de-imagen-y-descripcion-producto {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  header nav ul {
+    display: inline-block;
+  }
+  .descripcion {
+    display: inline-block;
+  }
+  header button.barsMenu {
+    display: none;
+  }
 }
 
 /* DESKTOP SCREEN */
-@media screen and (min-width:769px){
-    main section .contenedor-de-imagen-y-descripcion-producto{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    header nav ul{
-        display:inline-block
-    }
-    .descripcion{
-        display: inline-block;
-    }
-    header button.barsMenu{
-        display: none;
-    }
+@media screen and (min-width: 769px) {
+  main section .contenedor-de-imagen-y-descripcion-producto {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  header nav ul {
+    display: inline-block;
+  }
+  .descripcion {
+    display: inline-block;
+  }
+  header button.barsMenu {
+    display: none;
+  }
 }
