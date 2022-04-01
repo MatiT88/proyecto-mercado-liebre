@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Roboto';
     font-size: 12px;
@@ -54,10 +58,11 @@ header button.barsMenu{
 
 main section h3{
     font-size: 24px;
+    color: #666;
 }
 
-.contenedor-seccion-ofertas{
-    background-color: gray;
+.contenedor-de-toda-una-seccion{
+    background-color: #ebebeb;
 }
 
 .precios{
@@ -73,6 +78,18 @@ main section h3{
 
 }
 
+.descripcion{
+    font-size: 16px;
+    color: #666;
+}
+
+main section .contenedor-de-imagen-y-descripcion-producto{
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ebebeb;
+    background-color: white;
+}
+
 .contenedor-de-imagen-y-descripcion-producto i{
     border: 1px solid #39b54a;
     border-radius: 50%;
@@ -80,12 +97,6 @@ main section h3{
     color: #39b54a;
 }
 
-main section .contenedor-de-imagen-y-descripcion-producto{
-    padding: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ebebeb;
-}
 
 footer div.iconos-footer{
     text-align: center;
