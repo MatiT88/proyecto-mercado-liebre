@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi primer documento en HTML</title>
+  <title>MercadoLiebre registro</title>
   <link rel="stylesheet" href="/css/normalize.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
@@ -52,57 +52,96 @@
   <section class="banner-del-header">
     <img width="360" src="/images/img-home-banner.jpg" alt="" />
   </section>
-    <form action="/views/register.html" method="POST">
-        <div class="contenedor-nombre-y-apellido">
-            <label for="nombreYapellido">Nombre y apellido</label>
-            <input type="text" name="nombreYapellido" id="nombreYapellido">
-        </div>
-        <div class="contenedor-nombre-de-usuario">
-            <label for="nombreDeUsuario">Nombre de usuario</label>
-            <input type="text" name="nombreDeUsuario" id="nombreDeUsuario">
-        </div>
-        <div class="contenedor-fecha-de-nacimiento">
-            <label for="fecha-de-nacimiento">Fecha de nacimiento</label>
-            <input type="date" name="fecha-de-nacimiento" id="fecha-de-nacimiento">
-        </div>
-        <div>
-            <label for="domicilio">Domicilio</label>
-            <input type="text" name="domicilio" id="domicilio">
-        </div>
-        <div>
-            <h3> Queres comprar o vender?</h3>
-            <label for="comprar">Comprar</label>
-            <input type="radio" name="perfil-del-usuario" value="comprar">
-            <label for="vender">Vender</label>
-            <input type="radio" name="perfil-del-usuario" value="vender">
-        </div>
-        <h3>Categorías de interés</h3>
-        <div class="categorias-de-interes">
-            <label for="electro"></label>
-            <input type="checkbox" name="Categorias-de-interes" value="electro">
-            <label for="moda">Moda</label>
-            <input type="checkbox" name="Categorias-de-interes" value="moda">
-            <label for="hogar">Hogar</label>
-            <input type="checkbox" name="Categorias-de-interes" value="hogar">
-            <label for="jugueteria">Juguetería</label>
-            <input type="checkbox" name="Categorias-de-interes" value="jugueteria">
-            <label for="vida-sana">Vida sana</label>
-            <input type="checkbox" name="Categorias-de-interes" value="vida-sana">
-        </div>
-        <div>
-            <label for="foto-de-usuario">Foto de usuario</label>
-            <input type="file" name="foto-de-usuario" accept=".jpg, .png">
-        </div>
-        <div class="passwords">
-            <input type="password" name="contraseniaUsuario" required minlength="8" placeholder="Escribe tu contraseña...">
-            <input type="password" name="confirmar-contraseniaUsuario" required minlength="8" placeholder="Repeti tu contraseña">
-        </div>
-        <div class="boton-enviar">
-          <button type="submit" name="enviar">Enviar</button>
-          <button type="reset" name="resetear">Resetear</button>
-        </div>
 
-    </form>
+  <!-- Aca empieza el formulario -->
+  <main>
+    <form action="/views/register.html" method="POST">
+      <div class="contenedor-nombre-y-apellido">
+        <label for="nombreYapellido">Nombre y apellido</label>
+        <input type="text" name="nombreYapellido" id="nombreYapellido">
+      </div>
+      <div class="contenedor-nombre-de-usuario">
+        <label for="nombreDeUsuario">Nombre de usuario</label>
+        <input type="text" name="nombreDeUsuario" id="nombreDeUsuario">
+      </div>
+      <div class="contenedor-fecha-de-nacimiento">
+        <label for="fecha-de-nacimiento">Fecha de nacimiento</label>
+        <input type="date" name="fecha-de-nacimiento" id="fecha-de-nacimiento">
+      </div>
+      <div>
+        <label for="domicilio">Domicilio</label>
+        <input type="text" name="domicilio" id="domicilio">
+      </div>
+      <div>
+        <h3> Queres comprar o vender?</h3>
+        <label for="comprar">Comprar</label>
+        <input type="radio" name="perfil-del-usuario" value="comprar">
+        <label for="vender">Vender</label>
+        <input type="radio" name="perfil-del-usuario" value="vender">
+      </div>
+      <h3>Categorías de interés</h3>
+      <div class="categorias-de-interes">
+        <label for="electro"></label>
+        <input type="checkbox" name="Categorias-de-interes" value="electro">
+        <label for="moda">Moda</label>
+        <input type="checkbox" name="Categorias-de-interes" value="moda">
+        <label for="hogar">Hogar</label>
+        <input type="checkbox" name="Categorias-de-interes" value="hogar">
+        <label for="jugueteria">Juguetería</label>
+        <input type="checkbox" name="Categorias-de-interes" value="jugueteria">
+        <label for="vida-sana">Vida sana</label>
+        <input type="checkbox" name="Categorias-de-interes" value="vida-sana">
+      </div>
+      <div>
+        <label for="foto-de-usuario">Foto de usuario</label>
+        <input type="file" name="foto-de-usuario" accept=".jpg, .png">
+      </div>
+      <div class="passwords">
+        <input type="password" name="contraseniaUsuario" required minlength="8" placeholder="Escribe tu contraseña...">
+        <input type="password" name="confirmar-contraseniaUsuario" required minlength="8"
+          placeholder="Repeti tu contraseña">
+      </div>
+      <div class="boton-enviar">
+        <button type="submit" name="enviar">Enviar</button>
+        <button type="reset" name="resetear">Resetear</button>
+      </div>
+  </main>
+
+  <!-- Aca abajo va el footer -->
+  <footer>
+    <div class="iconos-footer"><i class="fas fa-credit-card"></i></div>
+    <div class="titulos-footer">
+      <h3>Pagá con tarjeta o en efectivo</h3>
+    </div>
+    <div class="descripciones-footer">
+      <p>
+        Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+        efectivo en puntos de pago. ¡Y siempre es seguro!
+      </p>
+    </div>
+    <div class="iconos-footer"><i class="fas fa-gift"></i></div>
+    <div class="titulos-footer">
+      <h3>Envío gratis desde $ 2.500</h3>
+    </div>
+    <div class="descripciones-footer">
+      <p>
+        Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+        miles de productos. Es un beneficio de Mercado Puntos.
+      </p>
+    </div>
+    <div class="iconos-footer"><i class="fas fa-user-shield"></i></div>
+    <div class="titulos-footer">
+      <h3>Seguridad, de principio a fin</h3>
+    </div>
+    <div class="descripciones-footer">
+      <p>
+        ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
+        hacer, porque estás siempre protegid@.
+      </p>
+    </div>
+    <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
+  </footer>
+  </form>
 </body>
 
 </html>
