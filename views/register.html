@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi primer documento en HTML</title>
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+
+<!-- De aca para abajo empieza el HEADER -->
+
+
+<body>
+  <header>
+    <div class="top-header">
+      <img class="logo-mercado-liebre" width="360" src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre" />
+      <div class="campo-busqueda-y-boton-busqueda">
+        <input type="text" placeholder="Buscar productos,marcas" />
+        <br>
+        <button class="boton-de-busqueda"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+    <div id="mano-top-header">
+      <p><i class="fas fa-hand-holding-usd"></i>Compra en cuotas y sin tarjeta de credito</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Tiendas Oficiales</a></li>
+        <li><a href="#">Vender</a></li>
+        <li><a href="#">Ayuda</a></li>
+        <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
+        <li><a href="#">Ingresar <i class="fas fa-sign-in-alt"></i></a></li>
+        <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+      </ul>
+    </nav>
+    <div class="buttonContain">
+      <button class="barsMenu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+  </header>
+
+  <!-- Aca esta el banner del medio -->
+  <section class="banner-del-header">
+    <img width="360" src="/images/img-home-banner.jpg" alt="" />
+  </section>
+    <form action="/views/register.html" method="POST">
+        <div class="contenedor-nombre-y-apellido">
+            <label for="nombreYapellido">Nombre y apellido</label>
+            <input type="text" name="nombreYapellido" id="nombreYapellido">
+        </div>
+        <div class="contenedor-nombre-de-usuario">
+            <label for="nombreDeUsuario">Nombre de usuario</label>
+            <input type="text" name="nombreDeUsuario" id="nombreDeUsuario">
+        </div>
+        <div class="contenedor-fecha-de-nacimiento">
+            <label for="fecha-de-nacimiento">Fecha de nacimiento</label>
+            <input type="date" name="fecha-de-nacimiento" id="fecha-de-nacimiento">
+        </div>
+        <div>
+            <label for="domicilio">Domicilio</label>
+            <input type="text" name="domicilio" id="domicilio">
+        </div>
+        <div>
+            <h3> Queres comprar o vender?</h3>
+            <label for="comprar">Comprar</label>
+            <input type="radio" name="perfil-del-usuario" value="comprar">
+            <label for="vender">Vender</label>
+            <input type="radio" name="perfil-del-usuario" value="vender">
+        </div>
+        <h3>Categorías de interés</h3>
+        <div class="categorias-de-interes">
+            <label for="electro"></label>
+            <input type="checkbox" name="Categorias-de-interes" value="electro">
+            <label for="moda">Moda</label>
+            <input type="checkbox" name="Categorias-de-interes" value="moda">
+            <label for="hogar">Hogar</label>
+            <input type="checkbox" name="Categorias-de-interes" value="hogar">
+            <label for="jugueteria">Juguetería</label>
+            <input type="checkbox" name="Categorias-de-interes" value="jugueteria">
+            <label for="vida-sana">Vida sana</label>
+            <input type="checkbox" name="Categorias-de-interes" value="vida-sana">
+        </div>
+        <div>
+            <label for="foto-de-usuario">Foto de usuario</label>
+            <input type="file" name="foto-de-usuario" accept=".jpg, .png">
+        </div>
+        <div>
+            <label for="contrasenia">Contraseña</label>
+            <input type="password" name="contrasenia">
+        </div>
+        <div>
+            <label for="confirmar-contrasenia">Confirmar contraseña</label>
+            <input type="password" name="confirmar-contrasenia">
+        </div>
+
+    </form>
+</body>
+
+</html>
