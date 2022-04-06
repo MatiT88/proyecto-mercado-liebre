@@ -93,13 +93,13 @@
             <label for="foto-de-usuario">Foto de usuario</label>
             <input type="file" name="foto-de-usuario" accept=".jpg, .png">
         </div>
-        <div>
-            <label for="contrasenia">Contraseña</label>
-            <input type="password" name="contrasenia">
+        <div class="passwords">
+            <input type="password" name="contraseniaUsuario" required minlength="8" placeholder="Escribe tu contraseña...">
+            <input type="password" name="confirmar-contraseniaUsuario" required minlength="8" placeholder="Repeti tu contraseña">
         </div>
-        <div>
-            <label for="confirmar-contrasenia">Confirmar contraseña</label>
-            <input type="password" name="confirmar-contrasenia">
+        <div class="boton-enviar">
+          <button type="submit" name="enviar">Enviar</button>
+          <button type="reset" name="resetear">Resetear</button>
         </div>
 
     </form>
