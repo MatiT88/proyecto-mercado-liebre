@@ -36,7 +36,7 @@
         <li><a href="#">Vender</a></li>
         <li><a href="#">Ayuda</a></li>
         <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
-        <li><a href="#">Ingresar <i class="fas fa-sign-in-alt"></i></a></li>
+        <li><a href="/login">Ingresar <i class="fas fa-sign-in-alt"></i></a></li>
         <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
       </ul>
     </nav>
@@ -53,59 +53,68 @@
     <img width="360" src="/images/img-home-banner.jpg" alt="" />
   </section>
 
+
+
+
   <!-- Aca empieza el formulario -->
   <main>
-    <form action="/views/register.html" method="POST">
-      <div class="contenedor-nombre-y-apellido">
-        <label for="nombreYapellido">Nombre y apellido</label>
-        <input type="text" name="nombreYapellido" id="nombreYapellido">
-      </div>
-      <div class="contenedor-nombre-de-usuario">
-        <label for="nombreDeUsuario">Nombre de usuario</label>
-        <input type="text" name="nombreDeUsuario" id="nombreDeUsuario">
-      </div>
-      <div class="contenedor-fecha-de-nacimiento">
-        <label for="fecha-de-nacimiento">Fecha de nacimiento</label>
-        <input type="date" name="fecha-de-nacimiento" id="fecha-de-nacimiento">
-      </div>
-      <div>
-        <label for="domicilio">Domicilio</label>
-        <input type="text" name="domicilio" id="domicilio">
-      </div>
-      <div>
-        <h3> Queres comprar o vender?</h3>
-        <label for="comprar">Comprar</label>
-        <input type="radio" name="perfil-del-usuario" value="comprar">
-        <label for="vender">Vender</label>
-        <input type="radio" name="perfil-del-usuario" value="vender">
-      </div>
-      <h3>Categorías de interés</h3>
-      <div class="categorias-de-interes">
-        <label for="electro"></label>
-        <input type="checkbox" name="Categorias-de-interes" value="electro">
-        <label for="moda">Moda</label>
-        <input type="checkbox" name="Categorias-de-interes" value="moda">
-        <label for="hogar">Hogar</label>
-        <input type="checkbox" name="Categorias-de-interes" value="hogar">
-        <label for="jugueteria">Juguetería</label>
-        <input type="checkbox" name="Categorias-de-interes" value="jugueteria">
-        <label for="vida-sana">Vida sana</label>
-        <input type="checkbox" name="Categorias-de-interes" value="vida-sana">
-      </div>
-      <div>
-        <label for="foto-de-usuario">Foto de usuario</label>
-        <input type="file" name="foto-de-usuario" accept=".jpg, .png">
-      </div>
-      <div class="passwords">
-        <input type="password" name="contraseniaUsuario" required minlength="8" placeholder="Escribe tu contraseña...">
-        <input type="password" name="confirmar-contraseniaUsuario" required minlength="8"
-          placeholder="Repeti tu contraseña">
-      </div>
-      <div class="boton-enviar">
-        <button type="submit" name="enviar">Enviar</button>
-        <button type="reset" name="resetear">Resetear</button>
-      </div>
+    <section class="section-register">
+      <form action="/views/register.html" method="POST" class="formulario">
+        <div class="contenedor-nombre-y-apellido">
+          <label for="nombreYapellido">Nombre y apellido</label>
+          <input type="text" name="nombreYapellido" id="nombreYapellido">
+        </div>
+        <div class="contenedor-nombre-de-usuario">
+          <label for="nombreDeUsuario">Nombre de usuario</label>
+          <input type="text" name="nombreDeUsuario" id="nombreDeUsuario">
+        </div>
+        <div class="contenedor-fecha-de-nacimiento">
+          <label for="fecha-de-nacimiento">Fecha de nacimiento</label>
+          <input type="date" name="fecha-de-nacimiento" id="fecha-de-nacimiento">
+        </div>
+        <div>
+          <label for="domicilio">Domicilio</label>
+          <input type="text" name="domicilio" id="domicilio">
+        </div>
+        <div class="perfil-del-usuario">
+          <h3> Queres comprar o vender?</h3>
+          <label for="comprar">Comprar</label>
+          <input type="radio" name="perfil-del-usuario" value="comprar">
+          <label for="vender">Vender</label>
+          <input type="radio" name="perfil-del-usuario" value="vender">
+        </div>
+        <h3>Categorías de interés</h3>
+        <div class="categorias-de-interes">
+          <label for="electro"></label>
+          <input type="checkbox" name="Categorias-de-interes" value="electro">
+          <label for="moda">Moda</label>
+          <input type="checkbox" name="Categorias-de-interes" value="moda">
+          <label for="hogar">Hogar</label>
+          <input type="checkbox" name="Categorias-de-interes" value="hogar">
+          <label for="jugueteria">Juguetería</label>
+          <input type="checkbox" name="Categorias-de-interes" value="jugueteria">
+          <label for="vida-sana">Vida sana</label>
+          <input type="checkbox" name="Categorias-de-interes" value="vida-sana">
+        </div>
+        <div>
+          <label for="foto-de-usuario">Foto de usuario</label>
+          <input type="file" name="foto-de-usuario" accept=".jpg, .png">
+        </div>
+        <div class="passwords">
+          <input type="password" name="contraseniaUsuario" required minlength="8"
+            placeholder="Escribe tu contraseña...">
+          <input type="password" name="confirmar-contraseniaUsuario" required minlength="8"
+            placeholder="Repeti tu contraseña">
+        </div>
+        <div class="boton-enviar">
+          <button type="submit" name="enviar">Enviar</button>
+          <button type="reset" name="resetear">Resetear</button>
+        </div>
+    </section>
   </main>
+
+
+
 
   <!-- Aca abajo va el footer -->
   <footer>

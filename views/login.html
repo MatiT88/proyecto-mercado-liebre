@@ -37,7 +37,7 @@
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
                 <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
-                <li><a href="#">Ingresar <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="/login">Ingresar <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </nav>
@@ -54,22 +54,31 @@
         <img width="360" src="/images/img-home-banner.jpg" alt="" />
     </section>
 
+
+
+
     <!-- Aca abajo va el formulario del login -->
     <main>
-        <form action="/views/login.html" method="POST">
-            <div class="nombre-de-usuario">
-                <label for="nombre-de-usuario">Nombre de usuari@</label>
-                <input type="text" name="nombre-de-usuario" id="nombre-de-usuario" required>
-            </div>
-            <div class="contrasenia">
-                <label for="contrasenia">Contraseña</label>
-                <input type="password" name="contrasenia" id="contrasenia" required minlength="8">
-            </div>
-            <div class="boton-de-enviar">
-
-            </div>
-        </form>
+        <section class="section-login">
+            <form action="/views/login.html" method="POST" class="formulario">
+                <div class="nombre-de-usuario">
+                    <label for="nombre-de-usuario">Nombre de usuari@</label>
+                    <input type="text" name="nombre-de-usuario" id="nombre-de-usuario" required>
+                </div>
+                <div class="contrasenia">
+                    <label for="contrasenia">Contraseña</label>
+                    <input type="password" name="contrasenia" id="contrasenia" required minlength="8">
+                </div>
+                <!-- este es el color del boton-> 3583fa -->
+                <div class="boton-de-enviar">
+                    <button> <a href="/">Entrar</a></button>
+                </div>
+            </form>
+        </section>
     </main>
+
+
+
 
     <!-- Aca comienza el FOOTER -->
     <footer>

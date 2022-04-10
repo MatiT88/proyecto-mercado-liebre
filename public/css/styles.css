@@ -67,9 +67,6 @@ header .banner-del-header {
   width: 100%;
 }
 
-
-
-
 .boton-de-busqueda {
   margin-left: 5px;
 }
@@ -135,8 +132,7 @@ main section .contenedor-de-imagen-y-descripcion-producto {
   font-size: 16px;
   width: 30px;
   height: 30px;
-  background-color: #FFF;
-
+  background-color: #fff;
 }
 
 /* main section article i{
@@ -165,7 +161,44 @@ footer div.titulos-footer {
   font-size: 14px;
 }
 footer div.descripciones-footer {
-  text-align: center
+  text-align: center;
+}
+
+/* Aca abajo van los estilos de los formularios */
+.formulario {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.section-login .formulario input {
+  width: 750px;
+  height: 35px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.section-login .boton-de-enviar a {
+  text-decoration: none;
+  color: white;
+}
+
+.formulario button {
+  width: 750px;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #3483fa;
+}
+
+.formulario .perfil-del-usuario {
+  display: flex;
+  flex-direction: column;
 }
 
 /* TABLET SCREEN */
